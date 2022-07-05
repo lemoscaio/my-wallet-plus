@@ -2,7 +2,9 @@ import { Router } from "express"
 import {
   insertNewFinancialEvent,
   getFinancialEventByUserId,
+  getSummedFinancialEventByUserId,
 } from "../controllers/financialController.js"
+import { validateToken } from "../middlewares/validateToken.js"
 
 const financialRouter = Router()
 

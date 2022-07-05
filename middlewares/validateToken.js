@@ -1,4 +1,4 @@
-function validateToken(req, res, next) {
+export function validateToken(req, res, next) {
   const authorization = req.headers.authorization || ""
   const token = authorization.replace("Bearer ", "")
 

@@ -1,10 +1,8 @@
-import { Router } from "express";
-import authRouter from "./authRouter.js";
-import financialRouter from "./financialRouter.js";
+import { Router } from "express"
+import authRouter from "./authRouter.js"
+import financialRouter from "./financialRouter.js"
 
-const Router = Router()
+export const mainRouter = Router()
 
-Router.use(authRouter)
-Router.use(financialRouter)
-
-export default Router
+mainRouter.use(authRouter)
+mainRouter.use(financialRouter)

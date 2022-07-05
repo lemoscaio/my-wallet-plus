@@ -1,4 +1,4 @@
-async function insertNewFinancialEvent(req, res) {
+export async function insertNewFinancialEvent(req, res) {
   try {
     const { value, type } = req.body
     const { user } = res.locals
@@ -12,7 +12,7 @@ async function insertNewFinancialEvent(req, res) {
   }
 }
 
-async function getFinancialEventByUserId(req, res) {
+export async function getFinancialEventByUserId(req, res) {
   try {
     const { user } = res.locals
 
@@ -25,7 +25,7 @@ async function getFinancialEventByUserId(req, res) {
   }
 }
 
-async function getSummedFinancialEventByUserId(req, res) {
+export async function getSummedFinancialEventByUserId(req, res) {
   try {
     const { user } = res.locals
 
